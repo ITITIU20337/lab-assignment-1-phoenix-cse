@@ -15,15 +15,12 @@ Ex:
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase = atoi(argv[1]);
-	//Your codes here
-	int digit;
-	while (testcase!=0)
-	{
-		/* code */
-		digit = testcase % 10;
-		printf("%d ",digit);
-		testcase = (testcase-digit)/10;
-	}
-	
+	int num;
+	while (testcase != 0 )
+	 {
+	 num= testcase % 10;
+	 printf("%d\n", num);
+	 testcase /=10 ;
+	 }	
 	return 0;
 }

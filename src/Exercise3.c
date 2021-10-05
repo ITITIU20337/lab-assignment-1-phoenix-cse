@@ -15,7 +15,11 @@ Ex:
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	int testcase = atoi(argv[1]);
-	//Your codes here
-	
+	int i;
+	for (i=0;i<testcase;i++)
+	if (i < 2){
+	  continue;}
+	if (testcase % i == 0){
+	 printf("%d",i);
 	return 0;
 }
